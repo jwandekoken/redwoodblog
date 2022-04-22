@@ -1,5 +1,5 @@
 import type { Prisma } from '@prisma/client'
-
+import { validate } from '@redwoodjs/api'
 import { db } from 'src/lib/db'
 
 export const contacts = () => {
@@ -17,6 +17,8 @@ interface CreateContactArgs {
 }
 
 export const createContact = ({ input }: CreateContactArgs) => {
+  validate(input.email, 'email', { email: true })
+
   return db.contact.create({
     data: input,
   })
