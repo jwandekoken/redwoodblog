@@ -17,7 +17,7 @@ host = "leieordem.net"
 username = "jc"
 agentForward = true
 sides = ["api","web"]
-path = "/var/www/app"
+path = "/var/www/leieordem.net"
 processNames = ["serve"]
 
 # If you have separate api and web servers:
