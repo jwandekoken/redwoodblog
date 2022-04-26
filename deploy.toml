@@ -13,7 +13,7 @@
 # See https://redwoodjs.com/docs/deploy/baremetal for more info
 
 [[servers]]
-host = "server.com"
+host = "leieordem.net"
 username = "jc"
 agentForward = true
 sides = ["api","web"]
